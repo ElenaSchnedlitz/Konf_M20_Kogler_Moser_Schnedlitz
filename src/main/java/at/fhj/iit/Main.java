@@ -10,5 +10,8 @@ public class Main {
 
         Drink d = new SimpleDrink("Rotwein",l);
         System.out.println(d);
+        
+        Drink beer = new Beer("Beer","Otterkringer","rotes Zwickl",500,5.2);
+        System.out.println(beer);
     }
 }
