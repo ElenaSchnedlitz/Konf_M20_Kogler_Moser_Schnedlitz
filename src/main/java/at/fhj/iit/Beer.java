@@ -7,7 +7,8 @@ public class Beer extends Drink{
     private double alcoholPercent;
 
     //Constructor
-    public Beer(String brand, String type, double volume, double alcoholPercent){
+    Beer(String name,String brand, String type, double volume, double alcoholPercent){
+    	super(name);
         this.brand = brand;
         this.type = type;
         this.volume = volume;
@@ -46,6 +47,10 @@ public class Beer extends Drink{
     //Functions
     public void takeASip(){
         this.volume = this.volume - 40;
+    }
+    
+    public String toString() {
+    	return "This is a beer called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
 }
