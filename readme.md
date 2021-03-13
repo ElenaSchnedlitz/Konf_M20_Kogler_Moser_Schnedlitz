@@ -4,6 +4,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 ### Aufgabenteilung
  - Philip Moser - implements beer-Subclass
  - Elena Schnedlitz - implements wine-Subclass
+ - Tobias Kogler - implements gin-Subclass
 
 
 
@@ -27,3 +28,4 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Elena:*	update des Ordners via git pull
  - *Tobias:* update des Ordners via git pull
  - *Moe:*	upload der Sub-Klasse Beer.java
+ - *Tobias* update des Ordners vi git pull
