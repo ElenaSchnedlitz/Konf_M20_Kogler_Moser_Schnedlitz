@@ -32,3 +32,6 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* upload der Sub-Klasse Gin.java
  - *Elena*  update über Veränderungen über git status und git pull
  - *Elena* upload der Sub-Klasse Wine.java
+ - *Tobias* update via gitpull
+ - *Tobias* bearbeiten der main Klasse und der Gin Klasse
+ - *Tobias* uplpoad via git push

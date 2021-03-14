@@ -41,7 +41,7 @@ public class Gin extends Drink {
 
     //Functions
     public void takeASip(){
-        this.volume = this.volume - 40;
+        this.volume = this.volume - 1;
     }
 
     public String toString() {
