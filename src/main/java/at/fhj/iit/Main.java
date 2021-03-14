@@ -14,6 +14,7 @@ public class Main {
         Drink beer = new Beer("Beer","Otterkringer","rotes Zwickl",500,5.2);
         System.out.println(beer);
 
-        Drink awesome = new Gin("Schwarzwald Dry Gin","Monkey 47",4,47);
+        Drink gin = new Gin("Schwarzwald Dry Gin","Monkey 47",4,47);
+        System.out.println(gin);
     }
 }
