@@ -35,3 +35,5 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* update via gitpull
  - *Tobias* bearbeiten der main Klasse und der Gin Klasse
  - *Tobias* uplpoad via git push
+ - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
+ - *Elena* upload durch git push
