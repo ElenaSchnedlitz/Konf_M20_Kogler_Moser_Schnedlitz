@@ -38,7 +38,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
  - *Elena* upload durch git push
 
- ##verwendete Unterlagen
+ ## verwendete Unterlagen
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
  - [makeareadme](https://www.makeareadme.com/)
- - [Markdown Reference] (https://commonmark.org/help/)
+ - [Markdown Reference](https://commonmark.org/help/)
