@@ -35,3 +35,8 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* update via gitpull
  - *Tobias* bearbeiten der main Klasse und der Gin Klasse
  - *Tobias* uplpoad via git push
+
+ ##verwendete Unterlagen
+ zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
+ - [makeareadme](https://www.makeareadme.com/)
+ - [Markdown Reference] (https://commonmark.org/help/)
