@@ -35,13 +35,10 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* update via gitpull
  - *Tobias* bearbeiten der main Klasse und der Gin Klasse
  - *Tobias* uplpoad via git push
-<<<<<<< HEAD
+ - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
+ - *Elena* upload durch git push
 
  ##verwendete Unterlagen
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
  - [makeareadme](https://www.makeareadme.com/)
  - [Markdown Reference] (https://commonmark.org/help/)
-=======
- - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
- - *Elena* upload durch git push
->>>>>>> 60f05a77f8fb04909f7bbf720e6750cc7c2882b2
