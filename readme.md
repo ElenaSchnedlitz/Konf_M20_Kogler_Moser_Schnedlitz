@@ -45,19 +45,19 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - [Markdown Reference](https://commonmark.org/help/)
 
 
-### Vorgehen Abgabe 2
-##Repo taggen
-#Tag erstellen
+# Vorgehen Abgabe 2
+## Repo taggen
+### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"
-#Tag anzeigen
+### Tag anzeigen
 git tag
-#Tag löschen
+### Tag löschen
 git -d v1.0
-#Tag am Remote-Repo erstellen
+### Tag am Remote-Repo erstellen
 git push origin v1.0
 
 ## .gitignore erstellen
-#Vorlagen für .gitignore
+### Vorlagen für .gitignore
 https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
 https://github.com/github/gitignore/blob/master/Java.gitignore
 
