@@ -59,6 +59,7 @@ git push origin v1.0
 ## .gitignore erstellen
 ### Vorlagen für .gitignore
 https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+
 https://github.com/github/gitignore/blob/master/Java.gitignore
 
 .gitignore auf das Repo pushen
