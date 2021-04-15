@@ -37,6 +37,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* uplpoad via git push
  - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
  - *Elena* upload durch git push
+ - *Elena* erstellen eines neuen branches testdrinkswine
 
  ## verwendete Unterlagen
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
