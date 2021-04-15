@@ -8,7 +8,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 
 
 
-### Vorgehen
+### Vorgehen Abgabe 1
  - *Elena:* 	neues [Repo](https://github.com/ElenaSchnedlitz/Konf_M20_Kogler_Moser_Schnedlitz) auf gitHub erstellt.
  - *Moe:* 	readme.md auf lokalem Rechner erstellt und dann mittels
 ```bash
@@ -42,3 +42,22 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
  - [makeareadme](https://www.makeareadme.com/)
  - [Markdown Reference](https://commonmark.org/help/)
+
+
+### Vorgehen Abgabe 2
+##Repo taggen
+#Tag erstellen
+git tag -a v1.0 -m "my version 1.0"
+#Tag anzeigen
+git tag
+#Tag löschen
+git -d v1.0
+#Tag am Remote-Repo erstellen
+git push origin v1.0
+
+## .gitignore erstellen
+#Vorlagen für .gitignore
+https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+https://github.com/github/gitignore/blob/master/Java.gitignore
+
+.gitignore auf das Repo pushen
