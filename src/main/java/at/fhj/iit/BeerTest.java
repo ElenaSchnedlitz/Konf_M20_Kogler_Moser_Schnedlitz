@@ -52,6 +52,6 @@ class BeerTest {
     void testToString() {
         String testString = beerTest.toString();
         assertEquals(testString,"This is a beer called " + beerTest.getBrand()+" "+beerTest.getType() +
-                " with " + beerTest.getAlcoholPercent() + " percent alcohol by volume");
+                " with " + beerTest.getAlcoholPercent() + " percent alcohol by volume", "should print the output line");
     }
 }
