@@ -1,4 +1,12 @@
 package at.fhj.iit;
+
+/**
+ * Wine is an addition to the main Class Drink
+ * delivers Information and details in form of Strings about an wine object
+ *
+ * @author Elena Schnedlitz
+ */
+
 public class Wine extends Drink {
     private String brand;
     private String type;
@@ -6,6 +14,15 @@ public class Wine extends Drink {
     private double alcoholPercent;
 
     //Constructor
+
+    /**
+     * used to create an new wine object
+     * @param name name of the wine
+     * @param brand what kind of brand is the wine
+     * @param type what type is the wine
+     * @param volume what volume does one bottle of this wine have
+     * @param alcoholPercent what alcohol percentage does a cup of this wine have
+     */
     Wine(String name,String brand, String type, double volume, double alcoholPercent){
         super(name);
         this.brand = brand;
