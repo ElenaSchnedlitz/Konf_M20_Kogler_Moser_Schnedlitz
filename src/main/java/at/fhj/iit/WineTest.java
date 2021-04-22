@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class WineTest {
     public Wine wineTest;
 
+
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
         wineTest = new Wine("Wine" , "Welschriesling", "süß", 500, 11.0);
@@ -39,7 +40,7 @@ class WineTest {
     @org.junit.jupiter.api.Test
     void isAlcoholic() {
         assertTrue(wineTest.isAlcoholic(), "this wine isn't alcoholic");
-        
+
     }
 
     @org.junit.jupiter.api.Test
