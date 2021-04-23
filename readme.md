@@ -39,6 +39,8 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Elena* upload durch git push
  - *Elena* erstellen eines neuen branches winetest
  - *Elena* weiterarbeiten an winetest und pushen des branches
+ - *Elena* arbeiten an den JavaDoc Kommentaren in Wine.java und hochladen mittels git push
+ - *Elena* überarbeiten der JavaDoc Kommentaren und hochladen mittels git push
 
  ## verwendete Unterlagen
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
