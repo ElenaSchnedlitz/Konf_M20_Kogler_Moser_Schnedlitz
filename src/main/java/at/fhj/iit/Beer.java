@@ -1,5 +1,14 @@
 package at.fhj.iit;
 
+/**
+ * The beer class implements an object that symbols a beer and its attributes.
+ * It is derived from the drink class.
+ *
+ * It provides the functionality of taking a sip of your beer and get and set the attributes of the object.
+ * @author Philip Moser
+ * @version 1.5
+ * @since 23.04.2021
+ */
 public class Beer extends Drink{
     private String brand;
     private String type;
