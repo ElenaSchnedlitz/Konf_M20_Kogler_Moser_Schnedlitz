@@ -43,23 +43,55 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  zum Aufbau der readme.md wurden folgende Unterlagen verwendet:
  - [makeareadme](https://www.makeareadme.com/)
  - [Markdown Reference](https://commonmark.org/help/)
+ - [github mastering markdown](https://guides.github.com/features/mastering-markdown/)
 
 
 # Vorgehen Abgabe 2
 ## Repo taggen
-### Tag erstellen
+#### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"
-### Tag anzeigen
+#### Tag anzeigen
 git tag
-### Tag löschen
+#### Tag löschen
 git -d v1.0
-### Tag am Remote-Repo erstellen
+#### Tag am Remote-Repo erstellen
 git push origin v1.0
 
 ## .gitignore erstellen
-### Vorlagen für .gitignore
-https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+#### Vorlagen für .gitignore
+[InteliJ .gitignore Vorlage](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
 
-https://github.com/github/gitignore/blob/master/Java.gitignore
+[Java .gitignore Vorlage](https://github.com/github/gitignore/blob/master/Java.gitignore)
 
-.gitignore auf das Repo pushen
+#### sonstiges zurr .gitignore
+Zeilen 56-63 (auto-import für Gradle und Marven) einkommentiert.
+
+.gitignore auf das Repo gepushed
+
+## Tests für jeweilige Klasse im InteliJ erstellen
+### Vorbereitung und Anlage
+ - In die Klasse gehen
+ - dort <kbd>Alt</kbd>+<kbd>Enter</kbd>
+ - im Context-Menü *create Test*
+ - ....
+
+ verwendete Resourcen:
+ https://www.jetbrains.com/help/idea/create-tests.html
+
+### Tests erstellen
+  - in `BeforeEach` das Testobjekt anlegen
+  - `tearDown` muss in diesem Fall nicht implementiert werden, da nichts nachhaltig verändert wird, und zurück gesetzt werden müsste, bevor der nächste Test rennen kann.
+##### Vorgehen bei der Testerstellung
+ - benutzte Methode: `assertEquals(actual,expected,message)`
+ - `actual`: es wird der zu prüfende Wert über die Methode gerufen.
+ - `expected`: es wird der erwartete Wert "hardcoded" eingetragen.
+ - `message` : im Fehlerfall wird diese Message ausgegeben.
+
+### Anmerkungen zu den Tests
+#### Wine Class - by Elena Schnedlitz
+
+
+#### Gin Class - by Tobias Kogler
+
+#### Beer Class - by Philip Moser
+keine 100% Testabdeckung, da kein Alkoholfreies Getränk getestet wurde.
