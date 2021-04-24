@@ -43,6 +43,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* aufgrund von falscherstellten docs neuen branch erstellt mit zuvorliegenden hashcode"
  - *Tobias* mit git branch -f <branch-name> <neuer branch name> den branch head auf den neuen branch replaziert
  - *Tobias* mit git push -f <remote> <branch> den alten branch hard überschrieben
+ - *Elena* mergen von den branches main und winetest
 
 # Vorgehen Abgabe 2
 - *Tobias* neuer branch gindrinkstest
@@ -95,7 +96,7 @@ Zeilen 56-63 (auto-import für Gradle und Marven) einkommentiert.
 
 ### Anmerkungen zu den Tests
 #### Wine Class - by Elena Schnedlitz
-
+es konnten keine 100% abgedeckt werden, da man nicht überprüft ob der Drink nicht alkoholisch ist.
 
 #### Gin Class - by Tobias Kogler
 
@@ -124,6 +125,7 @@ verwendete Resourcen:
  - [InteliJ JavaDoc documentation](https://www.jetbrains.com/help/idea/working-with-code-documentation.html)
  - [Handle obvious code documentation](https://www.adam-bien.com/roller/abien/entry/how_to_javadoc_efficient_and)
  - [Java Dokumentation zu JavaDoc](https://www.tutorialspoint.com/java/java_documentation.htm)
+ - [JavaDoc getter and setter] (https://stackoverflow.com/questions/1028967/simple-getter-setter-comments)
 
 # verwendete Unterlagen
 Linksammlung zu den verwendeten Quellen soweit nicht kontextgebunden im Fließtext
