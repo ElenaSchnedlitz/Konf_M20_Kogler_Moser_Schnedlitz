@@ -99,7 +99,7 @@ Zeilen 56-63 (auto-import für Gradle und Marven) einkommentiert.
 es konnten keine 100% abgedeckt werden, da man nicht überprüft ob der Drink nicht alkoholisch ist.
 
 #### Gin Class - by Tobias Kogler
-
+da kein Alkoholfreies Getränk getetstet wurde, keine 100% Testabdeckung.
 #### Beer Class - by Philip Moser
 keine 100% Testabdeckung, da kein Alkoholfreies Getränk getestet wurde.
 
