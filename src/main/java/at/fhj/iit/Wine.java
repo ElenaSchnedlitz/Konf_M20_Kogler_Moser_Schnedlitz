@@ -5,6 +5,8 @@ package at.fhj.iit;
  * delivers Information and details in form of Strings about an wine object
  *
  * @author Elena Schnedlitz
+ * @version 1.5
+ * @since 21.04.2021
  */
 
 public class Wine extends Drink {
@@ -16,6 +18,7 @@ public class Wine extends Drink {
     //Constructor
 
     /**
+     * @Obvious
      * used to create an new wine object
      * @param name name of the wine
      * @param brand what kind of brand is the wine
@@ -34,6 +37,7 @@ public class Wine extends Drink {
     //Getter
 
     /**
+     * @Obvoius
      * returns the brand that was given for a wine object
      * @return brand as a String
      */
@@ -42,6 +46,7 @@ public class Wine extends Drink {
     }
 
     /**
+     * @Obvoius
      * return the type of an wine object
      * @return type as a String
      */
@@ -52,6 +57,7 @@ public class Wine extends Drink {
     //@Override
 
     /**
+     * @Obvoius
      * returns the volume of an wine bottle of a given wine
      * @return volume as double
      */
@@ -62,6 +68,7 @@ public class Wine extends Drink {
     //@Override
 
     /**
+     * @Obvoius
      * return the alcohol percentage of a bottle of the given wine
      * @return alcohol percentage as double
      */
@@ -72,6 +79,7 @@ public class Wine extends Drink {
     //@Override
 
     /**
+     * @Obvoius
      * returns true if the given wine has an higher alcohol percentage then 0.5 per mille
      * @return true if the accusation is correct, else false
      */
