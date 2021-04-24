@@ -35,6 +35,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* uplpoad via git push
  - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
  - *Elena* upload durch git push
+<<<<<<< HEAD
  - *Tobias* neuer branch gindrinkstest
  - *Elena* erstellen eines neuen branches winetest
  - *Elena* weiterarbeiten an winetest und pushen des branches
@@ -43,8 +44,18 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* aufgrund von falscherstellten docs neuen branch erstellt mit zuvorliegenden hashcode"
  - *Tobias* mit git branch -f <branch-name> <neuer branch name> den branch head auf den neuen branch replaziert
  - *Tobias* mit git push -f <remote> <branch> den alten branch hard überschrieben
+=======
+
+
+>>>>>>> 4e1e2f6c3f894888f468742894c7ea3b8fb873c4
 
 # Vorgehen Abgabe 2
+- *Tobias* neuer branch gindrinkstest
+- *Elena* erstellen eines neuen branches winetest
+- *Moe* erstellen eines neuen branches beertest
+- *Elena* weiterarbeiten an winetest und pushen des branches
+- *Elena* arbeiten an den JavaDoc Kommentaren in Wine.java und hochladen mittels git push
+- *Elena* überarbeiten der JavaDoc Kommentaren und hochladen mittels git push
 ## Repo taggen
 #### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"
@@ -71,9 +82,10 @@ Zeilen 56-63 (auto-import für Gradle und Marven) einkommentiert.
  - In die Klasse gehen
  - dort <kbd>Alt</kbd>+<kbd>Enter</kbd>
  - im Context-Menü *create Test*
- - ....
+ - Methoden, Setup before, Setup after auswählen
+ - JUnit importieren
 
- verwendete Resourcen:
+ #### verwendete Resourcen:
 
  [Testerstllung in InteliJ](https://www.jetbrains.com/help/idea/create-tests.html)
 
