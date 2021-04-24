@@ -40,7 +40,9 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Elena* weiterarbeiten an winetest und pushen des branches
  - *Elena* arbeiten an den JavaDoc Kommentaren in Wine.java und hochladen mittels git push
  - *Elena* überarbeiten der JavaDoc Kommentaren und hochladen mittels git push
-
+ - *Tobias* aufgrund von falscherstellten docs neuen branch erstellt mit zuvorliegenden hashcode"
+ - *Tobias* mit git branch -f <branch-name> <neuer branch name> den branch head auf den neuen branch replaziert
+ - *Tobias* mit git push -f <remote> <branch> den alten branch hard überschrieben
 
 # Vorgehen Abgabe 2
 ## Repo taggen
@@ -125,3 +127,5 @@ Linksammlung zu den verwendeten Quellen soweit nicht kontextgebunden im Fließte
 
 #### git
  - [git Lernspiel](https://ohmygit.org/)
+- [move branchpointer to different commit] (https://www.w3docs.com/snippets/git/how-to-move-branch-pointer-to-different-commit.html)
+- [force gitpush to overwrite remote] (https://stackoverflow.com/questions/10510462/force-git-push-to-overwrite-remote-files)
