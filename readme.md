@@ -35,7 +35,6 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* uplpoad via git push
  - *Elena* Bearbeitung der main-klasse und hinzufügen ser sysout für die wine.java
  - *Elena* upload durch git push
-<<<<<<< HEAD
  - *Tobias* neuer branch gindrinkstest
  - *Elena* erstellen eines neuen branches winetest
  - *Elena* weiterarbeiten an winetest und pushen des branches
@@ -44,10 +43,6 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
  - *Tobias* aufgrund von falscherstellten docs neuen branch erstellt mit zuvorliegenden hashcode"
  - *Tobias* mit git branch -f <branch-name> <neuer branch name> den branch head auf den neuen branch replaziert
  - *Tobias* mit git push -f <remote> <branch> den alten branch hard überschrieben
-=======
-
-
->>>>>>> 4e1e2f6c3f894888f468742894c7ea3b8fb873c4
 
 # Vorgehen Abgabe 2
 - *Tobias* neuer branch gindrinkstest
