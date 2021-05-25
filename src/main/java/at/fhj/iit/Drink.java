@@ -3,7 +3,7 @@ package at.fhj.iit;
 /**
  * Abstract base class for concrete drink classes
  */
-public abstract class Drink {
+public abstract class Drink implements Sellable{
 
     /**
      * name of the drink, so it's easier to identify drink
@@ -41,4 +41,14 @@ public abstract class Drink {
      * @return true when alcoholic liquids are present, otherwise false
      */
     public abstract boolean isAlcoholic();
+
+    /**
+     * calculates the price of the drink
+     *
+     * @param drink enter an Drink-Object
+     * @return  get back a double that represents the price of the drink
+     */
+    private double calculatePrice(){
+        return this.getVolume() * this.getPricePerUnit();
+    }
 }

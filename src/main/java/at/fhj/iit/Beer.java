@@ -1,5 +1,7 @@
 package at.fhj.iit;
 
+import java.util.Date;
+
 /**
  * The beer class implements an object that symbols a beer and its attributes.
  * It is derived from the drink class.
@@ -9,29 +11,31 @@ package at.fhj.iit;
  * @version 1.5
  * @since 23.04.2021
  */
-public class Beer extends Drink{
+public class Beer extends Drink implements Sellable{
     private String brand;
     private String type;
-    private double volume;
+    private int volume;
     private double alcoholPercent;
+    private double pricePerUnit;
 
     //Constructor
 
     /**
      * @Obvious
-     * creates a new instnce of beer object
+     * creates a new instance of beer object
      * @param name  the name of the beer
      * @param brand the name of the brand/brewery
      * @param type  the type of the beer, eg. Märzen, Lager, RedAle,....
      * @param volume the fill level of the bottle/glass/can/... in ml
      * @param alcoholPercent the alcohol content in percent
      */
-    Beer(String name,String brand, String type, double volume, double alcoholPercent){
+    Beer(String name,String brand, String type, int volume, double alcoholPercent,double pricePerUnit){
     	super(name);
         this.brand = brand;
         this.type = type;
         this.volume = volume;
         this.alcoholPercent = alcoholPercent;
+        this.pricePerUnit = pricePerUnit;
     }
 
     //Getter
@@ -87,6 +91,7 @@ public class Beer extends Drink{
         }
     }
 
+
     //Functions
 
     /**
@@ -105,4 +110,22 @@ public class Beer extends Drink{
     	return "This is a beer called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
+
+    @Override
+    public void setPricePerUnit(double price) {
+        this.pricePerUnit = price;
+    }
+
+    @Override
+    public double getPricePerUnit() {
+        return this.pricePerUnit;
+    }
+
+    @Override
+    public Sale sell(Staff seller, int tablenumber) {
+
+        Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
+        actualSale.addToList();
+        return null;
+    }
 }
