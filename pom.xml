@@ -3,14 +3,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
 	<groupId>at.fhj.iit</groupId>
     <artifactId>Drinks</artifactId>
     <version>1.1</version>
 	<description>resembles Drinks that are getting mixed</description>
 	<url> https://github.com/ElenaSchnedlitz/Konf_M20_Kogler_Moser_Schnedlitz </url>
 
-	<!-- developers information, will be used for documentation -->
+	<!-- further development by -->
 	<developers>
 		<developer>
 		  <id>elenchen</id>
@@ -18,31 +18,31 @@
 		  <email>elena.schnedlitz@edu.fh-joanneum.at</email>
 		  <organization>FH JOANNEUM GmbH</organization>
 		  <roles>
-			<role>Main Developer</role>
+			     <role>Main Developer</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		</developer> 
+		</developer>
 		<developer>
 		  <id>moejabu</id>
 		  <name>Philip Moser</name>
 		  <email>philip.moser@edu.fh-joanneum.at</email>
 		  <organization>FH JOANNEUM GmbH</organization>
 		  <roles>
-			<role>Main Developer</role>
+			     <role>Main Developer</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		</developer> 
+		</developer>
 		<developer>
 		  <id>tobalon</id>
 		  <name>Tobias Kogler</name>
 		  <email>tobias.kogler@edu.fh-joanneum.at</email>
 		  <organization>FH JOANNEUM GmbH</organization>
 		  <roles>
-			<role>Main Developer</role>
+			     <role>Main Developer</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		</developer> 
-    <!-- each developer with general information for better communication within the project team -->
+		</developer>
+    <!-- basic source code developt by -->
     <developer>
       <id>michaelulm</id>
       <name>Michael Ulm</name>
@@ -81,123 +81,15 @@
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties/>
-    </developer>		
-	</developers>							
+    </developer>
+	</developers>
 
     <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
@@ -209,11 +101,6 @@
     <name>Drinks</name>
 
   <url>https://github.com/michaelulm/software-configuration-management/tree/master/exercises/Drinks-Sample</url>
-
-  <!-- general developers information -->
-  <developers>
-
-  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -234,8 +121,8 @@
       </plugin>
     </plugins>
   </build>
-  
-  
+
+
     <!-- define your current license, Care about sharing :) -->
     <licenses>
         <license>
@@ -245,5 +132,5 @@
             <comments>I care about sharing improvements.</comments>
         </license>
     </licenses>
-	
+
 </project>
