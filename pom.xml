@@ -98,15 +98,11 @@
         <scope>compile</scope>
       </dependency>
     </dependencies>
-    <name>Drinks</name>
-
-  <url>https://github.com/michaelulm/software-configuration-management/tree/master/exercises/Drinks-Sample</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.comiler.release>11</maven.comiler.release>
   </properties>
-
 
   <build>
     <plugins>
