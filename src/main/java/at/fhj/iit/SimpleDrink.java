@@ -1,5 +1,7 @@
 package at.fhj.iit;
 
+import java.util.Date;
+
 /**
  * represents a simple drink liquid which can be used in drinks
  */
@@ -9,6 +11,7 @@ public class SimpleDrink extends Drink{
      * uses only one liquid
      */
     protected Liquid l;
+    protected double pricePerUnit;
 
     /**
      * Creates a SimpleDrink object with given name and liquid
@@ -54,8 +57,30 @@ public class SimpleDrink extends Drink{
         return false;
     }
 
+    @Override
+    public double calculatePrice(){
+        return this.getVolume() * this.getPricePerUnit();
+    }
+
     public String toString(){
         return "Simple Drink called " + name + " with " + l.getAlcoholPercent() + " percent alcohol by volume";
     }
 
+    @Override
+    public void setPricePerUnit(double price) {
+        this.pricePerUnit = price;
+    }
+
+    @Override
+    public double getPricePerUnit() {
+        return this.pricePerUnit;
+    }
+
+    @Override
+    public Sale sell(Staff seller) {
+        Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
+        actualSale.addToList();
+
+        return  actualSale;
+    }
 }

@@ -11,7 +11,7 @@ import java.util.Date;
  * @version 1.5
  * @since 23.04.2021
  */
-public class Beer extends Drink implements Sellable{
+public class Beer extends Drink{
     private String brand;
     private String type;
     private int volume;
@@ -91,6 +91,11 @@ public class Beer extends Drink implements Sellable{
         }
     }
 
+    @Override
+    public double calculatePrice() {
+        return this.getVolume() * this.getPricePerUnit();
+    }
+
 
     //Functions
 
@@ -110,7 +115,6 @@ public class Beer extends Drink implements Sellable{
     	return "This is a beer called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
-
     @Override
     public void setPricePerUnit(double price) {
         this.pricePerUnit = price;
@@ -122,10 +126,10 @@ public class Beer extends Drink implements Sellable{
     }
 
     @Override
-    public Sale sell(Staff seller, int tablenumber) {
-
+    public Sale sell(Staff seller) {
         Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
         actualSale.addToList();
-        return null;
+
+        return  actualSale;
     }
 }

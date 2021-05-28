@@ -1,5 +1,7 @@
 package at.fhj.iit;
 
+import java.util.Date;
+
 /**
  * Wine is an addition to the main Class Drink
  * delivers Information and details in form of Strings about an wine object
@@ -14,6 +16,7 @@ public class Wine extends Drink {
     private String type;
     private double volume;
     private double alcoholPercent;
+    private double pricePerUnit;
 
     //Constructor
 
@@ -26,12 +29,13 @@ public class Wine extends Drink {
      * @param volume what volume does one bottle of this wine have
      * @param alcoholPercent what alcohol percentage does a cup of this wine have
      */
-    Wine(String name,String brand, String type, double volume, double alcoholPercent){
+    Wine(String name,String brand, String type, double volume, double alcoholPercent,double pricePerUnit){
         super(name);
         this.brand = brand;
         this.type = type;
         this.volume = volume;
         this.alcoholPercent = alcoholPercent;
+        this.pricePerUnit = pricePerUnit;
     }
 
     //Getter
@@ -91,6 +95,11 @@ public class Wine extends Drink {
         }
     }
 
+    @Override
+    public double calculatePrice() {
+        return this.getVolume() * this.getPricePerUnit();
+    }
+
     //Functions
 
     /**
@@ -106,5 +115,23 @@ public class Wine extends Drink {
      */
     public String toString() {
         return "This is a wine called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
+    }
+
+    @Override
+    public void setPricePerUnit(double price) {
+        this.pricePerUnit = price;
+    }
+
+    @Override
+    public double getPricePerUnit() {
+        return this.pricePerUnit;
+    }
+
+    @Override
+    public Sale sell(Staff seller) {
+        Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
+        actualSale.addToList();
+
+        return  actualSale;
     }
 }

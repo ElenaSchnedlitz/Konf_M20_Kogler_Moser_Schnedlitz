@@ -45,10 +45,7 @@ public abstract class Drink implements Sellable{
     /**
      * calculates the price of the drink
      *
-     * @param drink enter an Drink-Object
      * @return  get back a double that represents the price of the drink
      */
-    private double calculatePrice(){
-        return this.getVolume() * this.getPricePerUnit();
-    }
+    public abstract double calculatePrice();
 }

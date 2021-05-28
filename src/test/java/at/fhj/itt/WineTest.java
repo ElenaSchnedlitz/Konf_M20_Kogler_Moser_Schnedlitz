@@ -10,7 +10,7 @@ class WineTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-        wineTest = new Wine("Wine" , "Welschriesling", "süß", 500, 11.0);
+        wineTest = new Wine("Wine" , "Welschriesling", "süß", 500, 11.0,0.0232);
     }
 
     @org.junit.jupiter.api.AfterEach

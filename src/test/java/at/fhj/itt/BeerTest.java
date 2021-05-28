@@ -8,7 +8,7 @@ class BeerTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-        beerTest = new Beer("TestBeer","TestCompany","TestType",500,4.7);
+        beerTest = new Beer("TestBeer","TestCompany","TestType",500,4.7,0.0088);
     }
 
     @org.junit.jupiter.api.AfterEach

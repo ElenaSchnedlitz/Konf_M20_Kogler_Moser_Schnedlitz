@@ -8,7 +8,7 @@ class GinTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-         ginTest = new Gin("TestGin", "TestCompany", 20,  50.1);
+         ginTest = new Gin("TestGin", "TestCompany", 20,  50.1, 0.0672);
     }
 
     @org.junit.jupiter.api.AfterEach
