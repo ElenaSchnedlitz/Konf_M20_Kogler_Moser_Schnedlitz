@@ -57,6 +57,12 @@ public class SimpleDrink extends Drink{
         return false;
     }
 
+    /**
+     * @Obvious
+     * calculates the price of a drink
+     *
+     * @return price of actual drink
+     */
     @Override
     public double calculatePrice(){
         return this.getVolume() * this.getPricePerUnit();
@@ -66,16 +72,32 @@ public class SimpleDrink extends Drink{
         return "Simple Drink called " + name + " with " + l.getAlcoholPercent() + " percent alcohol by volume";
     }
 
+    /**
+     * sets the price for a ml of the drink
+     *
+     * @param price price per ml of drink
+     */
     @Override
     public void setPricePerUnit(double price) {
         this.pricePerUnit = price;
     }
 
+    /**
+     * returns price per ml
+     *
+     * @return price per ml
+     */
     @Override
     public double getPricePerUnit() {
         return this.pricePerUnit;
     }
 
+    /**
+     * one sale of a drink
+     *
+     * @param seller a stuff member that sells the drink
+     * @return a Sale object, ready to add to the list of sales
+     */
     @Override
     public Sale sell(Staff seller) {
         Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
