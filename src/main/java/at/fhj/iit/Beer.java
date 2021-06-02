@@ -91,6 +91,11 @@ public class Beer extends Drink{
         }
     }
 
+    /**
+     * @Obvious
+     * calculates the price of the beer
+     * @return price of actual beer
+     */
     @Override
     public double calculatePrice() {
         return this.getVolume() * this.getPricePerUnit();
@@ -115,16 +120,30 @@ public class Beer extends Drink{
     	return "This is a beer called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
+    /**
+     * sets price per ml
+     * @param price price per ml
+     */
     @Override
     public void setPricePerUnit(double price) {
         this.pricePerUnit = price;
     }
 
+    /**
+     * @Obvious
+     * get price per ml
+     * @return price per ml
+     */
     @Override
     public double getPricePerUnit() {
         return this.pricePerUnit;
     }
 
+    /**
+     * represents one sale
+     * @param seller a stuff member that sells the beer
+     * @return a Sale-object to add to list of sales
+     */
     @Override
     public Sale sell(Staff seller) {
         Sale actualSale = new Sale(new Date(System.currentTimeMillis()), this, seller);
