@@ -23,9 +23,7 @@ Erstellt ein neues Sale-Object und fügt es der Liste aller Verkäufe zu. Dieses
 ## neue Klasse CashRegister
 stellt alle Methoden zur Auswertung der Liste aller Verkäufe zur Verfügung. Verwendet dazu nur statische Methoden. Die Liste aller Verkäufe ist in den Methoden hardcodiert, da nicht davon ausgegangen wird, dass sich dies ändert.
 
-## Verweis auf Liquid nicht vollzogen
-Der Verweis auf Liquid wurde bewust nur für die SimpleDrinks Klasse so belassen, da dies nur bei komplexeren, von uns nicht implementierten Getränken und dort nur mit Vorbehalt sinnhaft einsetzbar ist.
-
-So muss bedacht werden, dass der Preis eines Getränks niemals aus der Summe der Preise seiner Flüssigkeiten besteht.
-
-Des Weiteren macht es unseres Erachtens keinen Sinn z.B. vier verschiedene Bier-Liquids anzulegen um daraus wieder vier verschiedene Bier-Sorten zu kreieren, da angenommen wird, das diese in der Flasche geliefert und verkauft werden.
+## Verweis auf Liquid
+Allen Getränken liegt nun ein Liquid-Objekt zugrunde, dass den Flascheninhalt spezifiziert.
+Dies war so gewünscht. Die Sinnhaftigkeit, dieses Ansatzes wird aber bezweifelt, da auch bei gemischten Getränken,sich der Preis nicht
+aus den Preisen der Zutaten errechnet und die Liquids nicht für mehrere Getränke verwendet werden können, da Attribute wie Volumesprozent sich von Produkt zu Produkt unterscheiden. 
