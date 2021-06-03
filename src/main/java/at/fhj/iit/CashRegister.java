@@ -15,10 +15,6 @@ import java.util.HashSet;
  */
 public class CashRegister {
 
-    private double calculatePrice(Drink drink){
-        return drink.getVolume() * drink.getPricePerUnit();
-    }
-
     public static double getTotalTurnoverAntiAlc(){
         double overAllPrice = 0.0;
         for(Sale oneSale:Sale.listOfAllSales){
