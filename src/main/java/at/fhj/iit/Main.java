@@ -1,7 +1,5 @@
 package at.fhj.iit;
 
-import java.util.Date;
-
 public class Main {
 
     public static void main(String[] args){
@@ -10,31 +8,33 @@ public class Main {
 //        System.out.println(l.getName());
 //        System.out.println(l.getVolume());
 
-        Drink d = new SimpleDrink("Rotwein",l);
+        Drink d = new SimpleDrink("Rotwein",l, 0.024);
 //        System.out.println(d);
 
-        Beer nullKommaJosef = new Beer ("NullKommaJosef", "Otterkringer", "alcoholFrei", 500, 0.0, 0.0086);
-        
-        Beer otterkringer = new Beer("Beer","Otterkringer","rotes Zwickl",500,5.2, 0.0084);
-//        System.out.println(otterkringer);
+        //Create Liquids
+        Liquid nullKomaJosefLiquid = new Liquid("Alcoholfree Beer", 500, 0.2);
+        Liquid zwickelOtterkringerLiquid = new Liquid("Zwickl", 500, 5.2);
+        Liquid schwarzwaldDryGinLiquid = new Liquid("Schwarzwald Dry Gin", 40, 47);
+        Liquid sonnleitenWelschrieslingLiquid = new Liquid("Welschriesling", 125, 11.0);
 
-        Drink schwarzwaldDry = new Gin("Schwarzwald Dry Gin","Monkey 47",40,47, 0.1575);
-//        System.out.println(gin);
+        //Create Dinks
+        Beer nullKommaJosef = new Beer("NullKomaJosef", "Otterkringer", nullKomaJosefLiquid, 0.0086);
+        Beer otterkringer = new Beer("Beer","Otterkringer",zwickelOtterkringerLiquid, 0.0084);
+        Drink schwarzwaldDry = new Gin("Schwarzwald Dry Gin","Monkey 47",schwarzwaldDryGinLiquid, 0.1575);
+        Drink sonnleitenWelsch = new Wine("Wine" , "Sonnleiten",sonnleitenWelschrieslingLiquid, 0.0232);
 
-        Drink sonnleitenWelsch = new Wine("Wine" , "Sonnleiten", "Welschriesling", 500, 11.0, 0.0232);
-//        System.out.println(wine);
-
-        //testrun for cashRegister
+        //Create Stuffmembers
         Staff staff1 = new Staff("Testkellner1");
         Staff staff2 = new Staff("Testkellner2");
 
+        //Sell drinks
         nullKommaJosef.sell(staff2);
         otterkringer.sell(staff1);
         schwarzwaldDry.sell(staff2);
         sonnleitenWelsch.sell(staff1);
         otterkringer.sell(staff1);
 
-
+        //get statistics for all dinks sold
         System.out.println("Turnover for Non Alc.: "+CashRegister.getTotalTurnoverAntiAlc());
         System.out.println("Turnover for Low Alc.: "+CashRegister.getTotalTurnoverLowAlc());
         System.out.println("Turnover for High Alc.: "+CashRegister.getTotalTurnoverHighAlc());
@@ -47,7 +47,6 @@ public class Main {
             System.out.println(e.getLocalizedMessage());
             System.out.println("Enter Date in Format: dd/MM/yyyy");
         }
-
 
     }
 }
