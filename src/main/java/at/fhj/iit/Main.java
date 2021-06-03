@@ -18,10 +18,10 @@ public class Main {
         Beer otterkringer = new Beer("Beer","Otterkringer","rotes Zwickl",500,5.2, 0.0084);
 //        System.out.println(otterkringer);
 
-        Drink gin = new Gin("Schwarzwald Dry Gin","Monkey 47",40,47, 0.1575);
+        Drink schwarzwaldDry = new Gin("Schwarzwald Dry Gin","Monkey 47",40,47, 0.1575);
 //        System.out.println(gin);
-        
-        Drink wine = new Wine("Wine" , "Welschriesling", "s??", 500, 11.0, 0.0232);
+
+        Drink sonnleitenWelsch = new Wine("Wine" , "Sonnleiten", "Welschriesling", 500, 11.0, 0.0232);
 //        System.out.println(wine);
 
         //testrun for cashRegister
@@ -30,8 +30,8 @@ public class Main {
 
         nullKommaJosef.sell(staff2);
         otterkringer.sell(staff1);
-        gin.sell(staff2);
-        wine.sell(staff1);
+        schwarzwaldDry.sell(staff2);
+        sonnleitenWelsch.sell(staff1);
         otterkringer.sell(staff1);
 
 
