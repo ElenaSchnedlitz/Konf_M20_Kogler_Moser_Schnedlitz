@@ -13,28 +13,23 @@ import java.util.Date;
  */
 public class Beer extends Drink{
     private String brand;
-    private String type;
-    private int volume;
-    private double alcoholPercent;
     private double pricePerUnit;
+    private Liquid liquid;
 
     //Constructor
 
     /**
-     * @Obvious
-     * creates a new instance of beer object
-     * @param name  the name of the beer
-     * @param brand the name of the brand/brewery
-     * @param type  the type of the beer, eg. Märzen, Lager, RedAle,....
-     * @param volume the fill level of the bottle/glass/can/... in ml
-     * @param alcoholPercent the alcohol content in percent
+     ** @Obvious
+     * used to create an new beer object
+     * @param name name of the beer
+     * @param brand name of the beer brand
+     * @param liquid liquid object of the beer
+     * @param pricePerUnit price per ml
      */
-    Beer(String name,String brand, String type, int volume, double alcoholPercent,double pricePerUnit){
-    	super(name);
+    Beer(String name, String brand, Liquid liquid, double pricePerUnit){
+        super(name);
         this.brand = brand;
-        this.type = type;
-        this.volume = volume;
-        this.alcoholPercent = alcoholPercent;
+        this.liquid = liquid;
         this.pricePerUnit = pricePerUnit;
     }
 
@@ -54,7 +49,7 @@ public class Beer extends Drink{
      * @return the type of beer as String
      */
     public String getType() {
-        return type;
+        return this.liquid.getName();
     }
 
     /**
@@ -64,7 +59,7 @@ public class Beer extends Drink{
      */
     @Override
     public double getVolume(){
-        return this.volume;
+        return this.liquid.getVolume();
     }
 
     /**
@@ -74,7 +69,7 @@ public class Beer extends Drink{
      */
     @Override
     public double getAlcoholPercent(){
-        return this.alcoholPercent;
+        return this.liquid.getAlcoholPercent();
     }
 
     /**
@@ -84,7 +79,7 @@ public class Beer extends Drink{
      */
     @Override
     public boolean isAlcoholic(){
-        if(this.alcoholPercent < 0.5){
+        if(getAlcoholPercent() < 0.5){
             return false;
         } else {
             return true;
@@ -109,7 +104,7 @@ public class Beer extends Drink{
      * is supposed to represent the drinking of a sip
      */
     public void takeASip(){
-        this.volume = this.volume - 40;
+        this.liquid.setVolume(getVolume() - 40);
     }
 
     /**
@@ -117,7 +112,7 @@ public class Beer extends Drink{
      * @return a sum up of the beer as String
      */
     public String toString() {
-    	return "This is a beer called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
+    	return "This is a beer called " + brand +" "+getType().toString() +" with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
     /**

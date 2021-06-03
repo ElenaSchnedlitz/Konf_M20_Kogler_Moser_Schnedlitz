@@ -13,28 +13,25 @@ import java.util.Date;
 
 public class Wine extends Drink {
     private String brand;
-    private String type;
-    private double volume;
-    private double alcoholPercent;
+//    private String type;
+//    private double volume;
+//    private double alcoholPercent;
     private double pricePerUnit;
+    private Liquid liquid;
 
     //Constructor
-
     /**
      * @Obvious
      * used to create an new wine object
      * @param name name of the wine
-     * @param brand what kind of brand is the wine
-     * @param type what type is the wine
-     * @param volume what volume does one bottle of this wine have
-     * @param alcoholPercent what alcohol percentage does a cup of this wine have
+     * @param brand what brand is the wine
+     * @param liquid liquid object of the wine
+     * @param pricePerUnit price per ml
      */
-    Wine(String name,String brand, String type, double volume, double alcoholPercent,double pricePerUnit){
+    Wine(String name, String brand, Liquid liquid, double pricePerUnit){
         super(name);
         this.brand = brand;
-        this.type = type;
-        this.volume = volume;
-        this.alcoholPercent = alcoholPercent;
+        this.liquid = liquid;
         this.pricePerUnit = pricePerUnit;
     }
 
@@ -55,7 +52,7 @@ public class Wine extends Drink {
      * @return type as a String
      */
     public String getType() {
-        return type;
+        return this.liquid.getName();
     }
 
     //@Override
@@ -66,7 +63,7 @@ public class Wine extends Drink {
      * @return volume as double
      */
     public double getVolume(){
-        return this.volume;
+        return this.liquid.getVolume();
     }
 
     //@Override
@@ -77,7 +74,7 @@ public class Wine extends Drink {
      * @return alcohol percentage as double
      */
     public double getAlcoholPercent(){
-        return this.alcoholPercent;
+        return this.liquid.getAlcoholPercent();
     }
 
     //@Override
@@ -88,7 +85,7 @@ public class Wine extends Drink {
      * @return true if the accusation is correct, else false
      */
     public boolean isAlcoholic(){
-        if(this.alcoholPercent < 0.5){
+        if(getAlcoholPercent() < 0.5){
             return false;
         } else {
             return true;
@@ -111,7 +108,7 @@ public class Wine extends Drink {
      * function that visualizes a sip that has been taken by a person
      */
     public void takeASip(){
-        this.volume = this.volume - 40;
+        this.liquid.setVolume(getVolume() - 40);
     }
 
     /**
@@ -119,7 +116,7 @@ public class Wine extends Drink {
      * @return contains the information about an wine object
      */
     public String toString() {
-        return "This is a wine called " + brand +" "+type + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
+        return "This is a wine called " + brand +" "+getType().toString() + " with " + this.getAlcoholPercent() + " percent alcohol by volume";
     }
 
     /**

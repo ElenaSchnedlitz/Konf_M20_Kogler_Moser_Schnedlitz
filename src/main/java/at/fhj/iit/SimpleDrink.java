@@ -18,10 +18,12 @@ public class SimpleDrink extends Drink{
      *
      * @param name name of drink
      * @param l only one liquid in drink, because it's a simple drink an not e.g. a cocktail
+     * @param pricePerUnit price per ml
      */
-    SimpleDrink(String name, Liquid l){
+    SimpleDrink(String name, Liquid l, double pricePerUnit){
         super(name);
         this.l = l;
+        this.pricePerUnit = pricePerUnit;
     }
 
     /**

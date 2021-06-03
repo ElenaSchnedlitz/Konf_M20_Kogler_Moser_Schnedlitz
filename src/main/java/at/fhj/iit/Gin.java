@@ -11,25 +11,24 @@ import java.util.Date;
  */
 public class Gin extends Drink {
     private String brand;
-    private double volume;
-    private double alcoholPercent;
+//    private double volume;
+//    private double alcoholPercent;
     private double pricePerUnit;
+    private Liquid liquid;
 
     //Constructor
-
     /**
      * @obvious
      * used to create a new gin object
      * @param name name of the gin
      * @param brand brand of the gin
-     * @param volume volumke of the gin
-     * @param alcoholPercent shows alcohol percentage
+     * @param liquid liquid object of the gin
+     * @param pricePerUnit price per ml
      */
-    Gin(String name,String brand, double volume, double alcoholPercent,double pricePerUnit){
+    Gin(String name, String brand, Liquid liquid, double pricePerUnit){
         super(name);
         this.brand = brand;
-        this.volume = volume;
-        this.alcoholPercent = alcoholPercent;
+        this.liquid = liquid;
         this.pricePerUnit = pricePerUnit;
     }
 
@@ -49,7 +48,7 @@ public class Gin extends Drink {
      */
     @Override
     public double getVolume(){
-        return this.volume;
+        return this.liquid.getVolume();
     }
 
     /**
@@ -58,7 +57,7 @@ public class Gin extends Drink {
      */
     @Override
     public double getAlcoholPercent(){
-        return this.alcoholPercent;
+        return this.liquid.getAlcoholPercent();
     }
 
     /**
@@ -67,7 +66,7 @@ public class Gin extends Drink {
      */
     @Override
     public boolean isAlcoholic(){
-        if(this.alcoholPercent < 0.5){
+        if(getAlcoholPercent() < 0.5){
             return false;
         } else {
             return true;
@@ -89,7 +88,7 @@ public class Gin extends Drink {
      */
     //Functions
     public void takeASip(){
-        this.volume = this.volume - 1;
+        this.liquid.setVolume(getVolume() - 5);
     }
 
     /**
