@@ -10,7 +10,8 @@ class WineTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-        wineTest = new Wine("Wine" , "Welschriesling", "süß", 500, 11.0,0.0232);
+        Liquid wineTestLiquid = new Liquid("TestWineType", 500, 11.0);
+        wineTest = new Wine("Wine" , "TestBrand", wineTestLiquid, 0.0232);
     }
 
     @org.junit.jupiter.api.AfterEach
@@ -19,12 +20,12 @@ class WineTest {
 
     @org.junit.jupiter.api.Test
     void getBrand() {
-        assertEquals(wineTest.getBrand(), "Welschriesling","wrong brand name given. Please check entry");
+        assertEquals(wineTest.getBrand(), "TestBrand","wrong brand name given. Please check entry");
     }
 
     @org.junit.jupiter.api.Test
     void getType() {
-        assertEquals(wineTest.getType(),"süß","wrong type given for this wine");
+        assertEquals(wineTest.getType(),"TestWineType","wrong type given for this wine");
     }
 
     @org.junit.jupiter.api.Test

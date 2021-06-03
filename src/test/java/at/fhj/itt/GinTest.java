@@ -8,7 +8,8 @@ class GinTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-         ginTest = new Gin("TestGin", "TestCompany", 20,  50.1, 0.0672);
+        Liquid ginTestLiquid = new Liquid("TestGin", 20, 50.1);
+         ginTest = new Gin("TestGin", "TestCompany", ginTestLiquid ,0.0672);
     }
 
     @org.junit.jupiter.api.AfterEach
@@ -41,7 +42,7 @@ class GinTest {
     void takeASip() {
         double volumeGin = ginTest.getVolume();
         ginTest.takeASip();
-        assertEquals(ginTest.getVolume(),volumeGin- 1, "didnt drink");
+        assertEquals(ginTest.getVolume(),volumeGin- 5, "didnt drink");
     }
 
     @org.junit.jupiter.api.Test

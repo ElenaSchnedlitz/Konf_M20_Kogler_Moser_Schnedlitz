@@ -8,7 +8,8 @@ class BeerTest {
 
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-        beerTest = new Beer("TestBeer","TestCompany","TestType",500,4.7,0.0088);
+        Liquid beerTestLiquid = new Liquid("TestType",500,4.7);
+        beerTest = new Beer("TestBeer","TestCompany", beerTestLiquid,0.0088);
     }
 
     @org.junit.jupiter.api.AfterEach
@@ -51,7 +52,7 @@ class BeerTest {
     @org.junit.jupiter.api.Test
     void testToString() {
         String testString = beerTest.toString();
-        assertEquals(testString,"This is a beer called " + beerTest.getBrand()+" "+beerTest.getType() +
+        assertEquals(testString,"This is a beer called " + beerTest.getBrand()+
                 " with " + beerTest.getAlcoholPercent() + " percent alcohol by volume", "should print the output line");
     }
 }
