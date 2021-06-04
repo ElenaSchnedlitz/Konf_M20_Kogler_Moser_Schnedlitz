@@ -55,7 +55,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 
 # Vorgehen Abgabe 3
 - *Tobias* neuer branch JUnitTest und auf diesem JUnit Tests erstellt
-
+- *Tobias* Testabdeckung.md hinzugefügt.
 ## Repo taggen
 #### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"
