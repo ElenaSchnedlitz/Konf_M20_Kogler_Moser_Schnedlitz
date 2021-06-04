@@ -1,0 +1,21 @@
+# Design
+
+## Class CashRegister
+- class
+
+## Interface Sellable
+- method sale drink
+ - price
+ - day
+ - salesman
+ - quantity
+
+## Class Sale
+
+```java
+Class Sale(Object Drink, Date datum, Object Salesman){
+}
+
+```
+- price
+## Class Person

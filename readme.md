@@ -52,6 +52,10 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 - *Elena* weiterarbeiten an winetest und pushen des branches
 - *Elena* arbeiten an den JavaDoc Kommentaren in Wine.java und hochladen mittels git push
 - *Elena* überarbeiten der JavaDoc Kommentaren und hochladen mittels git push
+
+# Vorgehen Abgabe 3
+- *Tobias* neuer branch JUnitTest und auf diesem JUnit Tests erstellt
+
 ## Repo taggen
 #### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"

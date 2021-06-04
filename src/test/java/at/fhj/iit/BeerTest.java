@@ -1,5 +1,8 @@
 package at.fhj.iit;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BeerTest {
@@ -52,7 +55,36 @@ class BeerTest {
     @org.junit.jupiter.api.Test
     void testToString() {
         String testString = beerTest.toString();
-        assertEquals(testString,"This is a beer called " + beerTest.getBrand()+
+        assertEquals(testString,"This is a beer called " + beerTest.getBrand()+ " " + beerTest.getType()  +
                 " with " + beerTest.getAlcoholPercent() + " percent alcohol by volume", "should print the output line");
     }
+    @org.junit.jupiter.api.Test
+    void calculatePrice() {
+
+        assertEquals(beerTest.calculatePrice(),0.0088*500, "wrong price");
+    }
+    @org.junit.jupiter.api.Test
+    void getPricePerUnit(){
+        beerTest.setPricePerUnit(0.2);
+        assertEquals(beerTest.getPricePerUnit(),0.2,"getter or setter doesn't work");
+
+    }
+
+    @org.junit.jupiter.api.Test
+    void sell()
+
+    {
+
+        Liquid beerTestLiquid = new Liquid("TestType", 500, 4.7);
+        beerTest = new Beer("TestBeer", "TestCompany", beerTestLiquid, 0.0088);
+        Staff staff1 = new Staff("Testkellner1");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String date = simpleDateFormat.format(new Date());
+        Sale actualSale = new Sale(new Date(), beerTest, staff1);
+        assertEquals(beerTest.sell(staff1).seller.name, "Testkellner1", "wrong name seller");
+        assertEquals(beerTest.sell(staff1).typeOfDink.name, "TestBeer", "wrong type of drink");
+        assertEquals(simpleDateFormat.format(beerTest.sell(staff1).dateOfSale), date, "wrong date in sale");
+
+    }
+
 }
