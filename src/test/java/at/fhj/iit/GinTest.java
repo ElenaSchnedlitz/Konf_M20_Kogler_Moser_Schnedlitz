@@ -5,7 +5,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GinTest {
+public class GinTest {
 
     public Gin ginTest;
 

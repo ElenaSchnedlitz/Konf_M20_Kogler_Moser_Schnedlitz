@@ -5,7 +5,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BeerTest {
+public class BeerTest {
 
     public Beer beerTest;
 

@@ -7,7 +7,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SaleTest {
+public class SaleTest {
 
 public Sale saleTest;
 

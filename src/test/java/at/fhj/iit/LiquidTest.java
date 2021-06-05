@@ -2,7 +2,7 @@ package at.fhj.iit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LiquidTest {
+public class LiquidTest {
     Liquid testLiquid;
 
     @org.junit.jupiter.api.BeforeEach

@@ -7,7 +7,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class WineTest {
+public class WineTest {
     public Wine wineTest;
 
 

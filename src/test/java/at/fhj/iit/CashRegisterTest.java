@@ -9,7 +9,7 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CashRegisterTest {
+public class CashRegisterTest {
 
     @BeforeEach
     void setUp() {
@@ -40,6 +40,8 @@ class CashRegisterTest {
 
     @AfterEach
     void tearDown() {
+        Sale.listOfAllSales.clear();
+
     }
 
     @org.junit.jupiter.api.Test
