@@ -42,7 +42,7 @@
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
 		</developer>
-    <!-- basic source code developt by -->
+    <!-- basic source code developed by -->
     <developer>
       <id>michaelulm</id>
       <name>Michael Ulm</name>
@@ -103,20 +103,129 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.comiler.release>11</maven.comiler.release>
   </properties>
+  
 
-  <build>
-    <plugins>
-      <!-- plugins for build automation process -->
+<!-- build configuration -->
+    <build>
+        <plugins>
+      <!-- build automation process -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.8.1</version>
         <configuration>
           <release>11</release>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
+      <!-- reporting -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.7.1</version>
+      </plugin>
+      <!-- will run unit tests -->
+      <!-- currently throws some warnings -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+      </plugin>
+      <!-- generate information about test coverage -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.6</version>
+        <executions>
+          <execution>
+          <id>prepare-agent</id>
+          <goals>
+            <goal>prepare-agent</goal>
+          </goals>
+          </execution>
+          <execution>
+          <id>report</id>
+          <phase>test</phase>
+          <goals>
+            <goal>report</goal>
+          </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- using README.md for Maven Site Documentation -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <!-- Copy the readme file to the site source files so that a page is generated from it. -->
+            <!-- https://stackoverflow.com/questions/13748659/how-to-include-github-markdown-files-into-maven-site -->
+            <id>copy-readme</id>
+            <phase>pre-site</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/src/site/markdown</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${basedir}</directory>
+                  <includes>
+                    <include>readme.md</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+        </plugins>
+    </build>
+
+
+
+    <reporting>
+        <plugins>
+            <!-- maven site for documentation -->
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.7.1</version>
+      </plugin>
+
+      <!-- Java Doc within Maven Site Documentation-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <!-- Disable JavaDoc warnings -->
+          <additionalJOption>-Xdoclint:none</additionalJOption>
+        </configuration>
+      </plugin>
+
+      <!-- Test Coverage from JaCoCo Plugin integration in Maven Site Documentation -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <configuration>
+          <dataFile>${jacoco.execution.data.file}</dataFile>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+        </plugins>
+    </reporting>
 
 
     <!-- define your current license, Care about sharing :) -->

@@ -58,7 +58,6 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 - *Tobias* Testabdeckung.md hinzugefügt.
 - *Tobias*  Testklassen public gesetzt.
 - *Elena* maven project implementiert sowie maven site
-- *Elena* überarbeiten der md Datein aufgrund von maven site Fehler
 ## Repo taggen
 #### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"

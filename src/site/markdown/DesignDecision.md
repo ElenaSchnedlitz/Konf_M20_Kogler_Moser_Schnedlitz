@@ -15,9 +15,10 @@ Es wurde ein neues Interface Sellable erstellt, das für alle verkaufbaren Produ
 * getPricePerUnit()
 * sell(Staff staff)
 
-**ad Unit:** </br> als Unit wurden Millilieter gewählt. Damit lässt sich der Preis immer über das ausgeschenkte Vollume * picePerUnit errechnen.
+<strong> add Unit:</strong> <br/>
+Als Unit wurden Millimeter gewählt. Damit lässt sich der Preis immer über das ausgeschenkte Volumen mal picePerUnit errechnen.
 
-**ad sell(Staff staff):** </br>
+**add sell(Staff staff):** <br/>
 Erstellt ein neues Sale-Object und fügt es der Liste aller Verkäufe zu. Dieses am Drink via Interface zu erstellen, hat den Vorteil, dass nur das Staff-Object übergeben werden muss. Dies hat vorallem bei der Vorstellung, dass die Software über ein Touchpanel betrieben wird, an dem sich der Schankkellner einmalig zu Beginn anmeldet und ansonsten nur anklickt was über den Schanktisch geht Vorteile.
 
 ## neue Klasse CashRegister
@@ -26,4 +27,4 @@ stellt alle Methoden zur Auswertung der Liste aller Verkäufe zur Verfügung. Ve
 ## Verweis auf Liquid
 Allen Getränken liegt nun ein Liquid-Objekt zugrunde, dass den Flascheninhalt spezifiziert.
 Dies war so gewünscht. Die Sinnhaftigkeit, dieses Ansatzes wird aber bezweifelt, da auch bei gemischten Getränken,sich der Preis nicht
-aus den Preisen der Zutaten errechnet und die Liquids nicht für mehrere Getränke verwendet werden können, da Attribute wie Volumesprozent sich von Produkt zu Produkt unterscheiden. 
+aus den Preisen der Zutaten errechnet und die Liquids nicht für mehrere Getränke verwendet werden können, da Attribute wie Volumensprozent sich von Produkt zu Produkt unterscheiden. 
