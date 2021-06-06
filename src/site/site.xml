@@ -1,0 +1,19 @@
+<project name="KONF_M20_Kogler_Moser_Schnedlitz">
+	<publishDate position="right"/>
+	<version position="left"/>
+	<body>
+
+		<menu name="Overview">
+			<item name="README" href="readme.html" />
+			<item name="Design Decision" href="DesignDecision.html" />
+			<item name="Drinks Tutorial" href="DrinksTutorial.html" />
+			<item name="Testabdeckung" href="Testabdeckung.html"/>
+		</menu>
+		<menu ref="reports" />
+		<menu ref="parent" />
+		<menu ref="modules" />
+	</body>
+	<poweredBy>
+		<logo name="IT-DUAL" href="https://it-dual.fh-joanneum.at/" img="./images/itdual-300x81.png" width="100px"/>
+	</poweredBy>
+</project>

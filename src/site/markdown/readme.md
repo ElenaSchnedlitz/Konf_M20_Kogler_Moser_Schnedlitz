@@ -57,9 +57,7 @@ Team C: Tobias Kogler, Philip Moser, Elena Schnedlitz
 - *Tobias* neuer branch JUnitTest und auf diesem JUnit Tests erstellt
 - *Tobias* Testabdeckung.md hinzugefügt.
 - *Tobias*  Testklassen public gesetzt.
-- *Tobias*  Bei Liqiud Test throw argument abgedeckt" 
 - *Elena* maven project implementiert sowie maven site
-- *Elena* überarbeiten der md Datein aufgrund von maven site Fehler
 ## Repo taggen
 #### Tag erstellen
 git tag -a v1.0 -m "my version 1.0"
