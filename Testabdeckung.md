@@ -1,11 +1,9 @@
 # Testabdeckung
 
 Die Testabdeckung wurde für 100% der Methoden erreicht.
-Für die KLassen Liquid, Gin, SimpleDrink, Wine und Beer wurden nur 94-95% der
+Für die KLassen Gin, SimpleDrink, Wine und Beer wurden nur 94-95% der
 der Zeilen gecovert.
 
-## Liquid
-Bei der Methode check Volume wurde throw new IllegaleArgumentException nicht getestet
 
 
 ## Gin
