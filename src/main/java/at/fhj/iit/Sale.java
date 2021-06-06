@@ -18,13 +18,20 @@ public class Sale {
     Date dateOfSale;
     Drink typeOfDink;
     Staff seller;
-
+    /**
+     * @Obvious
+     * @param dateOfSale
+     * @param typeOfDink
+     * @param seller
+     */
     public Sale(Date dateOfSale, Drink typeOfDink, Staff seller) {
         this.dateOfSale = dateOfSale;
         this.typeOfDink = typeOfDink;
         this.seller = seller;
     }
-
+    /**
+     * adds a sale to the list which contains all of the sales
+     */
     public void addToList(){
         listOfAllSales.add(this);
     }

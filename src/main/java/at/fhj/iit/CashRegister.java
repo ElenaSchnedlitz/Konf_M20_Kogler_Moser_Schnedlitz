@@ -14,7 +14,10 @@ import java.util.HashSet;
  * @since 25.05.2021
  */
 public class CashRegister {
-
+    /**
+     * sum of all anti-alcoholic drinks that were sold
+     * @return sum of all saled antialcholic drinks
+     */
     public static double getTotalTurnoverAntiAlc(){
         double overAllPrice = 0.0;
         for(Sale oneSale:Sale.listOfAllSales){
@@ -24,7 +27,10 @@ public class CashRegister {
         }
         return overAllPrice;
     }
-
+    /**
+     * calculates what amount of low alcoholic drinks were sold
+     * @return sum of all low alcoholic drinks which were sold
+     */
     public static double getTotalTurnoverLowAlc(){
         double overAllPrice = 0.0;
         for(Sale oneSale:Sale.listOfAllSales){
@@ -34,7 +40,10 @@ public class CashRegister {
         }
         return overAllPrice;
     }
-
+    /**
+     * calculates the amount of drinks that were sold which have a high alcohol percentage
+     * @return sum of sold high percent drinks
+     */
     public static double getTotalTurnoverHighAlc(){
         double overAllPrice = 0.0;
         for(Sale oneSale:Sale.listOfAllSales){
@@ -44,6 +53,12 @@ public class CashRegister {
         }
         return overAllPrice;
     }
+    /**
+     * calculates the amount of drinks that were sold by day
+     * @param dateForTurnover
+     * @return return of the sum of sold drinks
+     * @throws Exception
+     */
     public static double getTurnoverByDay (String dateForTurnover) throws Exception{
         double overAllPrice=0.0;
         Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dateForTurnover);
@@ -55,7 +70,11 @@ public class CashRegister {
         }
         return overAllPrice;
     }
-
+    /**
+     * calculates the sum of drinks that were sold by stuff
+     * @param name
+     * @return sum of sold drinks
+     */
     public static double getTurnoverByStuff(String name){
         double overAllPrice = 0.0;
         for(Sale oneSale:Sale.listOfAllSales){
@@ -65,7 +84,13 @@ public class CashRegister {
         }
         return overAllPrice;
     }
-
+    /**
+     * calculates the sum of drinks that were sold by day by stuff
+     * @param dateForTurnover
+     * @param name
+     * @return sum of soled drinks
+     * @throws Exception
+     */
     public static double getTurnoverPerDayByStuff(String dateForTurnover,String name) throws Exception{
         double overAllPrice=0.0;
         Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dateForTurnover);
